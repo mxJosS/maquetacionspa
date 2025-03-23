@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea5</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="contenedor_cabecera ancho margen">
+  </div>
+  <div class="contenedor_imagenes ancho margen">
+
+    <div class="logo_spa">
+      <img src="imagenes/logocabecera.jpg" alt="Logo salon de spa">
+      <div class="redes">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="imagenes/icono_facebook.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="imagenes/icono_instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="imagenes/icono_twitter.jpg" alt="Twitter">
+        </a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#">GALERIA</a>
+      <a href="#">PRECIOS</a>
+      <a href="#">CONTACTANOS</a>
+      <a href="#">EQUIPO</a>
+    </div>
+  </div>
+  <div class="imagen_defondo ancho margen">
+    <h1>PROMOCIONES DE MARZO</h1>
+    <br>
+    <p>Se acerca la época de playa y por eso preparamos éstas dos promociones ideales para ti.</p>
+    <br>
+    <div class="botones">
+      <a href="#" target="_blank" class="btn-rosa">Solicitar Promoción</a>
+      <a href="https://www.youtube.com/shorts/RGbxxPTEcYU" target="_blank" class="btn-negro">Ver Vídeo</a>
+    </div>
+  </div>
+
+  <div class="contenedor_productos ancho margen">
+    <div class="producto_fila">
+      <div class="producto_texto">
+        <h2>Los productos <strong>Science of Beauty</strong></h2>
+        <br><br>
+        <p>
+          Los productos Science of Beaut combinan ciencia y naturaleza para ofrecer soluciones avanzadas en cuidado de la piel, promoviendo belleza, salud y bienestar con ingredientes de alta calidad y eficacia comprobada.
+        </p>
+      </div>
+      <div class="producto_imagen">
+        <img src="imagenes/fotovelas.jpg" alt="Productos de belleza">
+      </div>
+    </div>
+  </div>
+  <div class="contenedor_trabajo ancho margen">
+    <h2 class="titulo">Buscamos talento para integrarlos a nuestro equipo</h2>
+    <div class="trabajo_fila">
+      <div class="trabajo_imagen">
+        <img src="imagenes/fotoaromatizante.jpg" alt="Foto aromatizante">
+      </div>
+      <div class="trabajo_texto">
+        <!-- igual se lo pedi a chatgpt XDDDDD -->
+        <h3>Puesto de trabajo para Recepcionista</h3>
+        <p>Estamos buscando una persona amable, organizada y con excelente trato al cliente para encargarse de la recepción del spa. Sus funciones incluyen agendar citas, atender llamadas y recibir a los clientes con calidez.</p>
+
+        <h3>Puesto de trabajo para Masajista</h3>
+        <p>Se requiere masajista con experiencia en técnicas relajantes y terapéuticas. Será responsable de brindar sesiones personalizadas, contribuyendo al bienestar físico y emocional de nuestros clientes.</p>
+
+        <h3>Puesto de trabajo para Nutriólogo</h3>
+        <p>Buscamos profesional en nutrición para brindar asesoría personalizada a nuestros clientes, enfocada en hábitos alimenticios saludables que complementen los tratamientos de belleza y bienestar del spa.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="contenedor_formulario ancho margen">
+    <div class="formulario_fila">
+      <div class="formulario_info">
+        <h2>Recibe noticias y promociones de <strong>SPA SALON</strong></h2>
+        <p>Un lugar para consentirte de pies a cabeza<br>
+        Servicio de salón estética y Spa personalizado</p>
+        <br>
+        <p><span class="span1">TELEFONO:</span> 999 420 8871</p>
+        <p><span class="span1">CORREO:</span> info@spasalon.com</p>
+    
+        <div class="formulario">
+          <h3>Tu dirección de correo electrónico</h3>
+          <form action="#">
+            <input type="email" name="correo" placeholder="tunombre@example.com" id="correo" required>
+            <button type="submit" id="btn_enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="formulario_video">
+        <h2>Nuestras Instalaciones</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w4qaODLR_Xg?si=mY2cZwX_dX5kqpBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+
+  </div>
+  <script>
+    $("#btn_enviar").click(function (event) {
+        event.preventDefault();
+
+       if ($("#correo").val().trim() === '') {
+      alert("No escribiste tu correo electrónico");
+      $("#correo").focus();
+      return false;
+    }
+      });
+  </script>
+ <div class="yo ancho margen">
+  <div class="footer_fila">
+    <div class="imagen_final">
+      <img src="imagenes/logo_spa.png" alt="Logo Spa Salon">
+    </div>
+    <div class="mis_datos">
+      <p><strong>Jose Angel Espinosa García</strong><br>Programación Web<br>7SB</p>
+    </div>
+  </div>
+</div>
+
+  
+</body>
+</html>
